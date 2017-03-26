@@ -1,6 +1,14 @@
+/*
+* Angular 2 CRUD application using Nodejs
+* @autthor Shashank Tiwari
+*/
+
 import { Injectable } from '@angular/core';
+
 import { Http, Response, Headers, RequestOptions } from '@angular/http';
+
 import { UserModel } from '../userModel';
+
 import {Observable} from 'rxjs/Rx';
 
 // Import RxJs required methods
@@ -10,9 +18,10 @@ import 'rxjs/add/operator/catch';
 
 @Injectable()
 export class HttpService {
-  private BASE_URL:string = 'https://simplify-api.herokuapp.com/api/users/';
 
-  constructor(
+	private BASE_URL:string = 'https://simplify-api.herokuapp.com/api/users/';
+
+	constructor(
 	        private http: Http
 	) { }
 
