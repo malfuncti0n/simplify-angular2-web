@@ -25,7 +25,7 @@ export class AddUserComponent implements OnChanges {
 	@Input() userList: string;
 
 	private isInsert:boolean = true;
-	private userModel:UserModel = new UserModel('','','','');
+	private userModel:UserModel = new UserModel('','','','','','','','');
 
 	constructor(
 			private httpService: HttpService
@@ -62,7 +62,7 @@ export class AddUserComponent implements OnChanges {
 	}
 
 	public resetAddUser(){
-		this.userModel = new UserModel('','','','');
+		this.userModel = new UserModel('','','','','','','','');
 		EmitterService.get(this.reset).emit(true);
 		this.isInsert = true;
 	}
@@ -70,7 +70,7 @@ export class AddUserComponent implements OnChanges {
 	ngOnChanges(changes:any) {
 
 		EmitterService.get(this.userInfo).subscribe( (value:UserModel) => {
-			this.userModel = new UserModel(value._id,value.name,value.gender,value.country);
+			this.userModel = new UserModel(value._id,value.username,value.firstname,value.lastname,value.lastname,value.password,value.gender,value.country);
 			this.isInsert = false;
 		});
 	}

@@ -5,15 +5,52 @@ Angular 2 CRUD application using Nodejs
 
 <h3 class="add-user-heading">Add/Upadte User </h3>
 <hr>
-
-	<div class="form-group">
-		Name :
+    <div class="form-group">
+		Email :
 		<input class="form-control"
 			type ="text"
-			placeholder="Your name here."
-			name= "name"
-			[(ngModel)]="userModel.name">
+			placeholder="Your email here."
+			name= "email"
+			[(ngModel)]="userModel.email">
 	</div>
+
+   <div class="form-group">
+		Username :
+		<input class="form-control"
+			type ="text"
+			placeholder="Your username here."
+			name= "username"
+			[(ngModel)]="userModel.username">
+	</div>
+
+
+	<div class="form-group">
+		Firstname :
+		<input class="form-control"
+			type ="text"
+			placeholder="Your firstname here."
+			name= "firstname"
+			[(ngModel)]="userModel.firstname">
+	</div>
+
+		<div class="form-group">
+		Lastname :
+		<input class="form-control"
+			type ="text"
+			placeholder="Your Lastname here."
+			name= "lastname"
+			[(ngModel)]="userModel.lastname">
+	</div>
+
+    <div class="form-group">
+		Password :
+		<input class="form-control"
+			type ="text"
+			placeholder="Your Password here."
+			name= "password"
+			[(ngModel)]="userModel.password">
+	</div>
+
 
 	<div class="form-group">
 		Gender :
