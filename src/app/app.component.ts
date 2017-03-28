@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 import { UserListComponent } from './user-list/user-list.component';
 import { AddUserComponent } from './add-user/add-user.component';
 
-import { EmitterService } from './services/emitter.service';
+import { EmitterService } from './_services/emitter.service';
 
 
 @Component({

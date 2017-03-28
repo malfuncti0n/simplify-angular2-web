@@ -6,8 +6,8 @@
 
 import { Component, Input, OnInit,OnChanges } from '@angular/core';
 
-import { HttpService } from '../services/http.service';
-import { EmitterService } from '../services/emitter.service';
+import { HttpService } from '../_services/http.service';
+import { EmitterService } from '../_services/emitter.service';
 
 import { UserModel } from '../userModel';
 
